@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    margin: 0;
+    padding: 30px;
+    color: #333;
+}
+
+h1, h2 {
+    color: #166534;
+    text-align: center;
+}
+
+form {
+    background: white;
+    max-width: 450px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background: #15803d;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #14532d;
+}
+/* Residents Dashboard Menu */
+
+.dashboard-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+    max-width: 350px;
+}
+
+.dashboard-menu a {
+    display: block;
+    background-color: #198754;
+    color: white;
+    padding: 14px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dashboard-menu a:hover {
+    background-color: #146c43;
+}
+
+/* =================================
+   ADMIN DASHBOARD DESIGN
+================================= */
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background: #f4f7f6;
+}
+
+.admin-sidebar {
+    width: 240px;
+    background: #126b45;
+    color: white;
+    padding: 25px 15px;
+}
+
+.admin-sidebar h2 {
+    text-align: center;
+    color: white;
+}
+
+.admin-sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    margin: 8px 0;
+    border-radius: 6px;
+}
+
+.admin-sidebar a:hover {
+    background: #0b5032;
+}
+
+.admin-main {
+    flex: 1;
+    padding: 30px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.admin-header h1 {
+    color: #126b45;
+}
+
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.admin-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.admin-card h3 {
+    color: #555;
+}
+
+.admin-card p {
+    font-size: 28px;
+    font-weight: bold;
+    color: #126b45;
+}
+
+.admin-shortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.admin-shortcuts a {
+    background: #126b45;
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.admin-shortcuts a:hover {
+    background: #0b5032;
+}
+
+@media (max-width: 700px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+
+    .admin-sidebar {
+        width: auto;
+    }
+
+    .admin-main {
+        padding: 15px;
+    }
+}
+
+/* =================================
+   APPLICATION STATUS NOTIFICATIONS
+================================= */
+
+.status-notification {
+    padding: 18px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.status-pending {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffe69c;
+}
+
+.status-approved {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #a3cfbb;
+}
+
+.status-rejected {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f1aeb5;
+}
